@@ -1,0 +1,118 @@
+{
+  "model_version": "2.0",
+  "training_date": "2024-03-19",
+  "model_config": {
+    "csv_file_path": "C:\\Users\\User\\Downloads\\UMACT\\cleaned_UMBank_complaints_data.csv",
+    "max_rows": 27972,
+    "use_strategic_groups": true,
+    "use_original_products": false,
+    "test_size": 0.2,
+    "output_dir": "./umbank_integrated_classifier",
+    "random_state": 42,
+    "tfidf_max_features": 5000,
+    "tfidf_ngram_range": [
+      1,
+      2
+    ],
+    "logistic_C": 1.0,
+    "logistic_solver": "liblinear",
+    "min_complaint_length": 10,
+    "train_dual_models": true
+  },
+  "strategic_groups": {
+    "High-Volume Consumer Products": [
+      "Credit card or prepaid card",
+      "Checking or savings account",
+      "Mortgage",
+      "Credit reporting, credit repair services, or other personal consumer reports"
+    ],
+    "Credit & Lending Portfolio": [
+      "Credit card",
+      "Vehicle loan or lease",
+      "Consumer Loan",
+      "Student loan",
+      "Payday loan, title loan, or personal loan",
+      "Payday loan"
+    ],
+    "Regulatory & Collections": [
+      "Debt collection",
+      "Credit reporting"
+    ],
+    "Specialized Services": [
+      "Money transfer, virtual currency, or money service",
+      "Money transfers",
+      "Other financial service",
+      "Prepaid card"
+    ],
+    "Banking Services": [
+      "Bank account or service"
+    ]
+  },
+  "business_metrics": {
+    "volume_thresholds": {
+      "high": 2070,
+      "medium_min": 180,
+      "low_max": 180
+    },
+    "strategic_insights": {
+      "High-Volume Consumer Products": {
+        "total_complaints": 20280,
+        "avg_per_product": 5070,
+        "strategy": "Dedicated high-capacity teams with streamlined processes",
+        "priority": "Critical"
+      },
+      "Credit & Lending Portfolio": {
+        "total_complaints": 3112,
+        "avg_per_product": 519,
+        "strategy": "Specialized lending team with risk management focus",
+        "priority": "High"
+      },
+      "Regulatory & Collections": {
+        "total_complaints": 1365,
+        "avg_per_product": 682,
+        "strategy": "Compliance-focused team with legal support",
+        "priority": "High"
+      },
+      "Specialized Services": {
+        "total_complaints": 1565,
+        "avg_per_product": 391,
+        "strategy": "Technical specialists for transaction-based services",
+        "priority": "Medium"
+      },
+      "Banking Services": {
+        "total_complaints": 1000,
+        "avg_per_product": 1000,
+        "strategy": "Standard banking service team",
+        "priority": "Medium"
+      }
+    }
+  },
+  "model_parameters": {
+    "tfidf": {
+      "max_features": 5000,
+      "ngram_range": [1, 2],
+      "stop_words": "english"
+    },
+    "logistic_regression": {
+      "C": 1.0,
+      "solver": "liblinear",
+      "class_weight": "balanced",
+      "random_state": 42
+    }
+  },
+  "training_stats": {
+    "training_date": "2025-06-04T11:53:46.205713",
+    "total_samples": 27970,
+    "training_samples": 22376,
+    "test_samples": 5594,
+    "strategic_classes": 5,
+    "product_classes": 17,
+    "training_time": 23.748248,
+    "strategic_accuracy": 0.7579549517340007,
+    "strategic_f1": 0.761741014618126,
+    "product_accuracy": 0.6973543081873436,
+    "product_f1": 0.6914130867537079,
+    "strategic_cm_path": "./umbank_integrated_classifier\\strategic_confusion_matrix.png",
+    "product_cm_path": "./umbank_integrated_classifier\\product_confusion_matrix.png"
+  }
+}
