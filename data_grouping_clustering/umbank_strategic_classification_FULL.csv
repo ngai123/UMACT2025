@@ -1,0 +1,17 @@
+Product,Group_ID,Group_Name,Group_Description,Management_Strategy,Complaint_Volume
+Credit card or prepaid card,1,High-Volume Consumer Products,Mass market products requiring dedicated teams,Dedicated high-capacity teams with streamlined processes,7110
+Checking or savings account,1,High-Volume Consumer Products,Mass market products requiring dedicated teams,Dedicated high-capacity teams with streamlined processes,6421
+Mortgage,1,High-Volume Consumer Products,Mass market products requiring dedicated teams,Dedicated high-capacity teams with streamlined processes,3640
+"Credit reporting, credit repair services, or other personal consumer reports",1,High-Volume Consumer Products,Mass market products requiring dedicated teams,Dedicated high-capacity teams with streamlined processes,3109
+Credit card,2,Credit & Lending Portfolio,All credit and loan products,Specialized lending team with risk management focus,2070
+Vehicle loan or lease,2,Credit & Lending Portfolio,All credit and loan products,Specialized lending team with risk management focus,589
+Consumer Loan,2,Credit & Lending Portfolio,All credit and loan products,Specialized lending team with risk management focus,240
+Student loan,2,Credit & Lending Portfolio,All credit and loan products,Specialized lending team with risk management focus,140
+"Payday loan, title loan, or personal loan",2,Credit & Lending Portfolio,All credit and loan products,Specialized lending team with risk management focus,72
+Payday loan,2,Credit & Lending Portfolio,All credit and loan products,Specialized lending team with risk management focus,1
+Debt collection,3,Regulatory & Collections,High-compliance and debt management products,Compliance-focused team with legal support,1327
+Credit reporting,3,Regulatory & Collections,High-compliance and debt management products,Compliance-focused team with legal support,38
+"Money transfer, virtual currency, or money service",4,Specialized Services,Payment services and other financial products,Technical specialists for transaction-based services,1493
+Money transfers,4,Specialized Services,Payment services and other financial products,Technical specialists for transaction-based services,56
+Other financial service,4,Specialized Services,Payment services and other financial products,Technical specialists for transaction-based services,9
+Prepaid card,4,Specialized Services,Payment services and other financial products,Technical specialists for transaction-based services,7
